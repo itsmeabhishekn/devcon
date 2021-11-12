@@ -1,0 +1,29 @@
+
+mongodb atlas
+----------------
+
+
+create new project
+
+create new cluster
+
+
+
+under clusters ->security -> add new user
+
+      username and pswd
+
+      default privilage
+
+
+->whitelist ip address
+	    allow access from anywhere
+
+
+
+connect -> to connect with express app
+
+collection ->
+
+mongoose -> helps to model data , methodes to interact with data
+

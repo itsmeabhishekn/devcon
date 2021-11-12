@@ -1,0 +1,65 @@
+creating routes 
+
+-----
+
+
+create a folder routes , api
+
+in api - users.js , auth.js , profile.js , post.js
+
+
+users.js
+---------
+
+const express = require('express');
+
+const router = express.Router();
+
+
+//route get api/users
+//desc test route
+//access public
+
+router.get('/',(req,res) => res.send('user route '));
+
+
+modules.exports = router;
+
+
+-> copy these codes to all files mentioned above and just change the message inside res.send( msg );
+
+
+in server js 
+---------------
+
+//define routes
+app.use('/api/users',require('./routes/api/users))
+
+
+-- do for all the files
+
+
+setting end points restful
+
+
+
+
+postman
+----------
+
+
+check /api/user  and rest of them
+
+
+seperate resources for endpoints by making folders
+
+create new collections 
+
+users  & auth
+
+posts
+
+profiles
+
+
+

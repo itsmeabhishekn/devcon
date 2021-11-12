@@ -1,0 +1,63 @@
+create folder devconnector
+
+create new file called .gitignore
+       -> add node_modules/
+
+->initiliase git repo
+	     $git init
+
+
+$npm init
+
+-> add necessary data
+
+
+
+install dep
+-----------
+
+$npm i express express-validator
+ bcryptjs config gravatar jsonwebtoken mongoose request
+
+install the regular dependencies
+
+
+dev dep
+-----
+$npm i nodemon concurrently
+
+
+create file server.js
+
+const express , const app
+
+const port = process.env.port  -- to deal with port while deploying in heroku
+
+or else use 5000 as port locally
+
+
+const PORT = process.env.PORT || 5000;
+
+
+npm scripts
+----------
+in package.json
+
+under scripts
+
+"start":"node server" - for heroku
+
+"server":"nodemon server" - for local
+
+
+npm run server - > executes nodemon
+
+
+
+postman
+
+--------
+
+add get request
+
+get http://localhost:5000   -send

@@ -1,0 +1,78 @@
+in users.js
+
+change these parameters
+
+change get to post
+
+change description
+
+console.log(' user route' )
+
+
+using body parser 
+
+-which is already included in the express now
+
+- using middleware now
+
+
+
+//in server.js
+
+initilising middleware
+
+app.use(express.json({extended: false}))
+
+to get the data in req body
+
+
+go to postman and make post req
+
+in header 
+
+-> add key - content-type
+    application-json
+
+    body- raw json
+    {
+        "name:"brad"
+
+
+    }
+
+
+    -send whatever data we want
+
+
+
+here we validate the input by checking if the user had the right data or not
+
+`express validator does this
+
+
+const { check , validationResults } = require('express-validator/check')
+
+
+-check express-validator documentation
+
+next checking if the name is present in the request
+
+check('name','Name is reuired').not().isEmpty()
+
+
+do it for rest of the fields as well
+
+
+.isEmail()
+
+.isLength({min:6})
+
+
+use error handling aswll
+
+we could connect with this react alsoo
+
+
+-->save these data inside postman 
+
+

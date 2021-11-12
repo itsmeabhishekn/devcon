@@ -1,0 +1,39 @@
+connecting mongodb databas with express application
+
+=================
+
+create folder - config
+
+inside config
+
+create a file - default.json
+
+includes default values
+
+
+->add mongouri
+
+
+
+inside config add another file
+
+-> db.js
+
+   adds mongodb connection
+
+   const mongoose = require('mongoose');
+
+   const config = require('config');
+
+   const db = config.get('mongoURI');
+
+
+   mongoose.connect(db)
+
+
+async-await -> uses this
+
+arrow functions -> uses 
+
+
+creates a function async() to connnect to the database , then we use try and catch to handle the possibility of error occuring.
